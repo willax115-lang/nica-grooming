@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nica Grooming</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <div class="huellas"></div>
+
+  <header>
+    <h1>🐾 Nica Grooming 🐾</h1>
+    <p>¡Belleza, cuidado y amor para tu mascota!</p>
+  </header>
+
+  <section class="galeria">
+    <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d" alt="Perro feliz">
+    <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba" alt="Gato adorable">
+    <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1" alt="Perro grooming">
+    <img src="https://images.unsplash.com/photo-1537151625747-768eb6cf92b2" alt="Mascota feliz">
+  </section>
+
+  <section class="servicios">
+    <div class="card" onclick="enviarWhatsApp('Baño Spa')">
+      <h3>🛁 Baño Spa</h3>
+      <p>Incluye shampoo especial y secado.</p>
+      <span>$10</span>
+    </div>
+
+    <div class="card" onclick="enviarWhatsApp('Corte Profesional')">
+      <h3>✂️ Corte Profesional</h3>
+      <p>Estilo moderno según la raza.</p>
+      <span>$15</span>
+    </div>
+
+    <div class="card" onclick="enviarWhatsApp('Grooming Premium')">
+      <h3>✨ Grooming Premium</h3>
+      <p>Baño + Corte + Uñas + Perfume.</p>
+      <span>$25</span>
+    </div>
+  </section>
+
+  <section class="contacto">
+    <h2>Agenda tu cita hoy mismo</h2>
+    <a href="#" onclick="enviarWhatsAppGeneral()" class="whatsapp-btn">
+       📲 Reservar por WhatsApp
+    </a>
+  </section>
+
+  <footer>
+    © 2026 Nica Grooming | Amor en cada detalle 🐾
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

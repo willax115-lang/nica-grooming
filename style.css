@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  color: white;
+  background: linear-gradient(-45deg, #2ecc71, #3498db, #1abc9c, #16a085);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  overflow-x: hidden;
+}
+
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+header {
+  padding: 40px 20px;
+}
+
+header h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.galeria img {
+  width: 220px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+  transition: transform 0.4s;
+}
+
+.galeria img:hover {
+  transform: scale(1.1) rotate(2deg);
+}
+
+.servicios {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.card {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  width: 250px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card span {
+  display: block;
+  margin-top: 15px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
+}
+
+.contacto {
+  padding: 40px 20px;
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  padding: 15px 35px;
+  background: #25D366;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 50px;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+  background: #1ebe5d;
+  transform: scale(1.1);
+}
+
+footer {
+  padding: 20px;
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
+.huellas::before {
+  content: "🐾 🐾 🐾 🐾 🐾 🐾 🐾 🐾 🐾 🐾";
+  position: fixed;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  font-size: 30px;
+  opacity: 0.1;
+  animation: flotar 20s linear infinite;
+}
+
+@keyframes flotar {
+  0% {transform: translateY(0);}
+  100% {transform: translateY(120vh);}
+}

@@ -119,3 +119,52 @@ footer {
   0% {transform: translateY(0);}
   100% {transform: translateY(120vh);}
 }
+
+/* LOADER */
+#loader{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:white;
+display:flex;
+align-items:center;
+justify-content:center;
+z-index:9999;
+transition:opacity 1s ease;
+}
+
+.pets-loader{
+position:relative;
+width:300px;
+height:80px;
+}
+
+.dog-loader,
+.cat-loader{
+width:50px;
+height:50px;
+border-radius:50%;
+position:absolute;
+}
+
+.dog-loader{
+background:#222;
+animation:dogWalk 5s linear;
+}
+
+.cat-loader{
+background:#555;
+animation:catWalk 5s linear;
+}
+
+@keyframes dogWalk{
+0%{left:-60px;}
+100%{left:100%;}
+}
+
+@keyframes catWalk{
+0%{left:-120px;}
+100%{left:100%;}
+}

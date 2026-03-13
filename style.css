@@ -163,7 +163,20 @@ animation:catWalk 5s linear;
 0%{left:-60px;}
 100%{left:100%;}
 }
+.huellas::after{
+content:"🐾 🐾 🐾 🐾 🐾 🐾";
+position:fixed;
+right:0;
+top:-50px;
+font-size:30px;
+opacity:0.08;
+animation:flotar2 25s linear infinite;
+}
 
+@keyframes flotar2{
+0%{transform:translateY(0);}
+100%{transform:translateY(130vh);}
+}
 @keyframes catWalk{
 0%{left:-120px;}
 100%{left:100%;}

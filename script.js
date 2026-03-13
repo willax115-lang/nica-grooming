@@ -11,3 +11,14 @@ function enviarWhatsAppGeneral() {
   const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
   window.open(url, "_blank");
 }
+window.addEventListener("load",()=>{
+setTimeout(()=>{
+document.getElementById("loader").style.opacity="0";
+document.body.classList.add("loaded");
+
+setTimeout(()=>{
+document.getElementById("loader").style.display="none";
+},1000);
+
+},5000);
+});
